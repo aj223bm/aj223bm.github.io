@@ -1,0 +1,325 @@
+body {
+}
+#author {
+  position: absolute;
+  text-align: center;
+  bottom: 1px;
+  left: 0px;
+  right: 0px;
+  color: rgba(91, 95, 139, 0.6);
+  z-index: 1;
+}
+#background {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: url('../image/environment_background.jpg') no-repeat #5b5f8b;
+  background-size: cover;
+}
+
+#memoryBtn {
+  background-image: url('../image/league_icon.png');
+}
+#chatBtn {
+  background-image: url('../image/chat_icon.png');
+}
+#videoBtn {
+  background-color: #5161ff;
+  background-image: url('../image/video_icon.png');
+}
+.infoDiv{
+
+  position: fixed;
+
+  width: 200px;
+  border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+
+  color: #00529B;
+  background-color: rgba(189, 229, 248, 0.8);
+
+  display: inline;
+  z-index: 100000;
+}
+
+.infoDiv.videoBtn { /* video info */
+  /*margin-top: 100px; */
+}
+#buttons {
+
+  text-align: center;
+  height: 100%;
+  width: 70px;
+  background-color: rgba(91, 95, 139, 0.6);
+
+  border: 10px solid transparent;
+  padding: 0px;
+  /*-webkit-border-image: url(../image/border.png) 30 30 round; /* Safari 3.1-5 */
+ /* -o-border-image: url(../image/border.png) 30 30 round; /* Opera 11-12.1 */
+ /* border-image: url(../image/border.png) 30 30 round; */
+
+  top: -3px;
+  left: -3px;
+  bottom: 0px;
+
+  display: block;
+  position: fixed;
+}
+
+#buttons button{
+  background-size: cover;
+
+  position: relative;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+
+  border: solid;
+ }
+
+
+.window {
+  background-color: #144558;
+  width: 300px;
+  height: 350px;
+  border: groove #5b5f8b;
+
+  cursor:move;
+  position:absolute;
+  display: block;
+
+  -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
+
+  overflow: hidden;
+}
+
+.window[currentSize = '3 x 4'] {
+  height: 270px;
+}
+.window[currentSize = '4 x 4'] {
+  height: 350px;
+}
+.window[currentSize = '4 x 5'] {
+  height: 420px;
+}
+
+
+.dragSection {
+  width: 100%;
+  height: 25px;
+  background-color: #5b5f8b;
+  border: #000000;
+
+  color: #b5b9ff;
+  padding-left: 10px;
+  cursor:move;
+  position:relative;
+}
+
+.xBtn {
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  height: 100%;
+  background-color: #d42d1a;
+}
+
+.xBtn.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+  top: 5px;
+  right: 5px;
+  height: 30%;
+}
+
+.settings {
+  background-color: rgba(0, 0, 0, 0.51);
+}
+.settings select {
+  width: 20%;
+
+  background-color: #5161ff;
+  border: 1px outset #5161ff;
+
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.settings button {
+  background-color: #5161ff;
+  border: 1px outset black;
+}
+
+#windowSection {
+  width: 94%;
+  left: 85px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  height: 100%;
+ /* border-left: solid 10px black; */
+
+  display: block;
+
+  position: fixed;
+}
+
+.videoWindow {
+  width: 500px;
+  height: 470px;
+}
+
+.videoWindow iframe{
+  width: 99%;
+  height: 76%;
+}
+.playlist {
+  position: relative;
+  background-color: black;
+  text-align: center;
+  top: 0px;
+  bottom: 10px;
+}
+.playlist button {
+  width: 19%;
+  height: 76px;
+  padding: 10px;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 10px;
+  border: solid black 1px;
+
+  bottom: 10px;
+
+  background-size: cover;
+}
+
+.vid1Btn {
+  background: url('http://img.youtube.com/vi/vzHrjOMfHPY/0.jpg');
+}
+.vid2Btn {
+  background: url('http://img.youtube.com/vi/0nlJuwO0GDs/0.jpg');
+}
+.vid3Btn {
+  background: url('http://img.youtube.com/vi/tEnsqpThaFg/0.jpg');
+}
+.vid4Btn {
+  background: url('http://img.youtube.com/vi/fmI_Ndrxy14/0.jpg');
+}
+.vid5Btn {
+  background: url('http://img.youtube.com/vi/FtEpp9lkfxA/0.jpg');
+}
+
+.chat {
+}
+
+.chat textarea {
+  max-width: 98%;
+  min-width: 98%;
+  position: absolute;
+  resize: none;
+}
+
+.sendArea {
+  max-height: 15%;
+  min-height: 15%;
+
+  margin-top: 83%;
+  resize: none;
+
+  background-image: url(../image/lolbackground.jpg);
+  background-size: cover;
+
+}
+
+.messagesArea {
+  max-height: 60%;
+  min-height: 60%;
+
+  margin-top: 8%;
+
+  background-image: url(../image/lolbackground.jpg);
+  background-size: 100% 100%;
+
+}
+
+.usernameLabel {
+  position: absolute;
+
+  font-size: 10px;
+  margin-top: 103%;
+  padding-left: 5px;
+  color: #b5b9ff;
+}
+
+.connectedLabel {
+  padding: 5px;
+  font-size: 10px;
+  color: #b5b9ff;
+}
+
+.userNameForm {
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+
+  width: 97%;
+  height: 90%;
+
+  position: absolute;
+  z-index: 100;
+
+  opacity: 0.8;
+}
+
+.userNameForm * {
+  color: #d42d1a;
+  margin-top: 50%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.card {
+  background-image: url("../image/league_icon.png");
+  background-size: cover;
+  width: 65px;
+  height: 65px;
+  margin: 5px;
+}
+
+.card.orianna.visible{
+  background-image: url("../image/orianna.png");
+}
+.card.morgana.visible{
+  background-image: url("../image/morgana.png");
+}
+.card.karma.visible{
+  background-image: url("../image/karma.png");
+}
+.card.annie.visible{
+  background-image: url("../image/annie.png");
+}
+.card.braum.visible{
+  background-image: url("../image/braum.png");
+}
+.card.fizz.visible{
+  background-image: url("../image/fizz.png");
+}
+.card.jinx.visible{
+  background-image: url("../image/jinx.png");
+}
+.card.varus.visible{
+  background-image: url("../image/varus.png");
+}
+.card.sona.visible{
+   background-image: url("../image/sona.png");
+ }
+.card.ekko.visible{
+  background-image: url("../image/ekko.png");
+}
